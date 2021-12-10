@@ -64,4 +64,12 @@ public class Operation {
         int position= linkedList.searchElement(a);
         System.out.println("Element present at "+position);
     }
+    public static void insertTheElement() {
+        LinkedList linkedList=addElementInStart();
+        System.out.println("Before");
+        linkedList.print();
+        linkedList.insertAfter(30,40);
+        System.out.println("After");
+        linkedList.print();
+    }
 }

@@ -91,4 +91,17 @@ public class LinkedList {
         }
         return 0;
     }
+    public void insertAfter(int element, int data) {
+        Node node=head;
+        Node newNode = new Node(data);
+        while (node != null) {
+            if(node.data==element)
+            {
+                Node temp= node.next;
+                node.next=newNode;
+                newNode.next=temp;
+            }
+            node = node.next;
+        }
+    }
 }
