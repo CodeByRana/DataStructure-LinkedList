@@ -113,4 +113,21 @@ public class LinkedList {
             newNode = newNode.next;
         }
     }
+    public void insertSort(int value) {
+        Node newNode = new Node(value);
+        if (head==null || head.data >= newNode.data){
+            newNode.next = head;
+            head = newNode;
+        }
+        else {
+            Node current = head;
+            while (current.next != null && current.next.data < newNode.data){
+                current = current.next;
+            }
+            newNode.next = current.next;
+            current.next = newNode;
+
+        }
+
+    }
 }

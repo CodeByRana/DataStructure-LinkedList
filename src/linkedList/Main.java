@@ -14,6 +14,7 @@ public class Main {
         System.out.println("Enter 7 to search the element : ");
         System.out.println("Enter 8 to add the element in linked list : ");
         System.out.println("Enter 9 to delete the element in linked list : ");
+        System.out.println("Enter 10 to add element in sort order : ");
         switch (sc.nextInt()){
             case 1:
                 Operation.createSimpleLikedList();
@@ -41,6 +42,9 @@ public class Main {
                 break;
             case 9:
                 Operation.deleteNode();
+                break;
+            case 10:
+                Operation.insertOderOfSort();
                 break;
             default:
                 System.out.println("please enter correct option");
