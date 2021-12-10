@@ -37,4 +37,12 @@ public class Operation {
         linkedList.addInMid(30);
         linkedList.print();
     }
+    public static void deleteElementInStart() {
+        LinkedList linkedList = new LinkedList();
+        System.out.println("Before");
+        linkedList.print();
+        linkedList.pop();
+        System.out.println("After");
+        linkedList.print();
+    }
 }
