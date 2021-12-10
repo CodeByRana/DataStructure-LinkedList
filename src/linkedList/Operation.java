@@ -1,5 +1,7 @@
 package linkedList;
 
+import java.util.Scanner;
+
 public class Operation {
     public static void createSimpleLikedList() {
         Node firstNode = new Node(56);
@@ -53,5 +55,13 @@ public class Operation {
         linkedList.remove();
         System.out.println("After");
         linkedList.print();
+    }
+    public static void searchTheElement() {
+        LinkedList linkedList=addElementInStart();
+        linkedList.print();
+        System.out.println("Enter element you want to search");
+        int a=(new Scanner(System.in)).nextInt();
+        int position= linkedList.searchElement(a);
+        System.out.println("Element present at "+position);
     }
 }

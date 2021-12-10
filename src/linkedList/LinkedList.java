@@ -78,4 +78,17 @@ public class LinkedList {
             newNode.next = null;
         }
     }
+    public int searchElement(int data) {
+        int center=1;
+        Node newNode=head;
+        while (newNode != null) {
+            if(newNode.data==data)
+            {
+                return center;
+            }
+            newNode  = newNode.next;
+            center++;
+        }
+        return 0;
+    }
 }

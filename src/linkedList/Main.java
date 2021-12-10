@@ -11,6 +11,7 @@ public class Main {
         System.out.println("Enter 4 to add element in middle : ");
         System.out.println("Enter 5 to delete the first element : ");
         System.out.println("Enter 6 to delete element from last : ");
+        System.out.println("Enter 7 to search the element : ");
         switch (sc.nextInt()){
             case 1:
                 Operation.createSimpleLikedList();
@@ -29,6 +30,9 @@ public class Main {
                 break;
             case 6:
                 Operation.deleteElementInLast();
+                break;
+            case 7:
+                Operation.searchTheElement();
                 break;
             default:
                 System.out.println("please enter correct option");
