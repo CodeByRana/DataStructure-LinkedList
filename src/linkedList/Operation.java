@@ -23,4 +23,11 @@ public class Operation {
         linkedList.push(56);
         linkedList.print();
     }
+    public static void addElementAtEnd() {
+        LinkedList linkedList =new LinkedList();
+        linkedList.appendData(56);
+        linkedList.appendData(30);
+        linkedList.appendData(70);
+        linkedList.print();
+    }
 }

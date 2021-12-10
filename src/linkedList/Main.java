@@ -6,13 +6,16 @@ public class Main {
         System.out.println("Welcome To LinkedList Data Structure : ");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter 1 to create a simple linked list : ");
-        System.out.println("Enter 2 add element in start linked list :");
+        System.out.println("Enter 2 add element in start linked list : ");
+        System.out.println("Enter 3 add element in end : ");
         switch (sc.nextInt()){
             case 1:
                 Operation.createSimpleLikedList();
                 break;
             case 2:
                 Operation.addElementInStart();
+            case 3:
+                Operation.addElementAtEnd();
                 break;
         }
     }
