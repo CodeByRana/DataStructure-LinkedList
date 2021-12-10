@@ -30,4 +30,11 @@ public class Operation {
         linkedList.appendData(70);
         linkedList.print();
     }
+    public static void addElementInMid() {
+        LinkedList linkedList = new LinkedList();
+        linkedList.push(70);
+        linkedList.push(56);
+        linkedList.addInMid(30);
+        linkedList.print();
+    }
 }
