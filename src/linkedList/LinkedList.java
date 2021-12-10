@@ -104,4 +104,13 @@ public class LinkedList {
             node = node.next;
         }
     }
+    public void deleteNode(int data) {
+        Node newNode=head;
+        while (newNode.next!= null) {
+            if(newNode.next.data==data) {
+                newNode.next= newNode.next.next;
+            }
+            newNode = newNode.next;
+        }
+    }
 }

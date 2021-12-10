@@ -72,4 +72,12 @@ public class Operation {
         System.out.println("After");
         linkedList.print();
     }
+    public static void deleteNode() {
+        LinkedList linkedList = addElementInStart();
+        linkedList.print();
+        System.out.println("Enter element you want to Delete");
+        int a = (new Scanner(System.in)).nextInt();
+        linkedList.deleteNode(a);
+        linkedList.print();
+    }
 }
