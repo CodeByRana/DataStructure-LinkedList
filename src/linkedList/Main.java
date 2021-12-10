@@ -10,6 +10,7 @@ public class Main {
         System.out.println("Enter 3 add element in end : ");
         System.out.println("Enter 4 to add element in middle : ");
         System.out.println("Enter 5 to delete the first element : ");
+        System.out.println("Enter 6 to delete element from last : ");
         switch (sc.nextInt()){
             case 1:
                 Operation.createSimpleLikedList();
@@ -25,6 +26,9 @@ public class Main {
                 break;
             case 5:
                 Operation.deleteElementInStart();
+                break;
+            case 6:
+                Operation.deleteElementInLast();
                 break;
             default:
                 System.out.println("please enter correct option");

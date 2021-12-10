@@ -71,4 +71,11 @@ public class LinkedList {
     public void pop() {
         this.head = this.head.next;
     }
+    public void remove() {
+        Node newNode = this.head;
+        while (newNode.next != null) {
+            newNode = newNode.next;
+            newNode.next = null;
+        }
+    }
 }

@@ -16,12 +16,13 @@ public class Operation {
             temp= temp.next;
         }
     }
-    public static void addElementInStart() {
+    public static LinkedList addElementInStart() {
         LinkedList linkedList = new LinkedList();
         linkedList.push(70);
         linkedList.push(30);
         linkedList.push(56);
         linkedList.print();
+        return linkedList;
     }
     public static void addElementAtEnd() {
         LinkedList linkedList =new LinkedList();
@@ -38,10 +39,18 @@ public class Operation {
         linkedList.print();
     }
     public static void deleteElementInStart() {
-        LinkedList linkedList = new LinkedList();
+        LinkedList linkedList = addElementInStart();
         System.out.println("Before");
         linkedList.print();
         linkedList.pop();
+        System.out.println("After");
+        linkedList.print();
+    }
+    public static void deleteElementInLast() {
+        LinkedList linkedList=addElementInStart();
+        System.out.println("Before");
+        linkedList.print();
+        linkedList.remove();
         System.out.println("After");
         linkedList.print();
     }
